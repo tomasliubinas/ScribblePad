@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */; };
+		C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E22D84F20A00ABB66E /* ContentView.swift */; };
+		C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E52D84F38800ABB66E /* PersistenceController.swift */; };
+		C38056E92D84F3FD00ABB66E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E82D84F3FD00ABB66E /* Note.swift */; };
 		C3B6E6AC2D843C2B00B0EF49 /* ScriblePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6AB2D843C2B00B0EF49 /* ScriblePadApp.swift */; };
 		C3B6E6B02D843C2C00B0EF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */; };
 		C3B6E6B32D843C2C00B0EF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B6E6B22D843C2C00B0EF49 /* Preview Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribleAppDelegate.swift; sourceTree = "<group>"; };
+		C38056E22D84F20A00ABB66E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C38056E52D84F38800ABB66E /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C38056E82D84F3FD00ABB66E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C3B6E6A82D843C2B00B0EF49 /* ScriblePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriblePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B6E6AB2D843C2B00B0EF49 /* ScriblePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriblePadApp.swift; sourceTree = "<group>"; };
 		C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C38056DF2D84EF1600ABB66E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */,
+				C3B6E6D82D84490300B0EF49 /* LineNumberTextEditor.swift */,
+				C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */,
+				C38056E22D84F20A00ABB66E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C38056E42D84F36E00ABB66E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C38056E52D84F38800ABB66E /* PersistenceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C38056E72D84F3EA00ABB66E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C38056E82D84F3FD00ABB66E /* Note.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		C3B6E69F2D843C2B00B0EF49 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +134,11 @@
 		C3B6E6AA2D843C2B00B0EF49 /* ScriblePad */ = {
 			isa = PBXGroup;
 			children = (
+				C38056E72D84F3EA00ABB66E /* Entities */,
+				C38056E42D84F36E00ABB66E /* Controllers */,
+				C38056DF2D84EF1600ABB66E /* Views */,
 				C3B6E6AB2D843C2B00B0EF49 /* ScriblePadApp.swift */,
-				C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */,
-				C3B6E6D82D84490300B0EF49 /* LineNumberTextEditor.swift */,
-				C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */,
+				C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */,
 				C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */,
 				C3B6E6B42D843C2C00B0EF49 /* ScriblePad.entitlements */,
 				C3B6E6B12D843C2C00B0EF49 /* Preview Content */,
@@ -266,7 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B6E6D92D84490300B0EF49 /* LineNumberTextEditor.swift in Sources */,
+				C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */,
 				C3B6E6D72D84484000B0EF49 /* LineNumberRulerView.swift in Sources */,
+				C38056E92D84F3FD00ABB66E /* Note.swift in Sources */,
+				C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */,
+				C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */,
 				C3B6E6AC2D843C2B00B0EF49 /* ScriblePadApp.swift in Sources */,
 				C3B6E6DB2D84494400B0EF49 /* NoteDetailView.swift in Sources */,
 			);

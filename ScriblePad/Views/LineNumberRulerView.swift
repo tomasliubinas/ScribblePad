@@ -148,7 +148,7 @@ class LineNumberRulerView: NSRulerView {
         if endsWithNewline && !lineRanges.isEmpty {
             let lastLineRange = lineRanges.last!
             let lastLineGlyphRange = layoutManager.glyphRange(forCharacterRange: lastLineRange, actualCharacterRange: nil)
-            var lastLineRect = layoutManager.boundingRect(forGlyphRange: lastLineGlyphRange, in: textContainer)
+            let lastLineRect = layoutManager.boundingRect(forGlyphRange: lastLineGlyphRange, in: textContainer)
             
             // Get font line height for consistent spacing
             let fontLineHeight = textView.font?.boundingRectForFont.height ?? 15.0
