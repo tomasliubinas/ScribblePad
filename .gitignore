@@ -9,13 +9,17 @@
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+# User-specific Xcode files
+xcuserdata/
+*.xcuserdatad/
 *.xccheckout
 *.moved-aside
-DerivedData
+DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
+
+# Workspace files
 *.xcworkspace
 !default.xcworkspace
 
@@ -24,7 +28,6 @@ DerivedData
 Packages/
 Package.pins
 Package.resolved
-*.xcodeproj
 
 # Obj-C/Swift specific
 *.hmap
