@@ -8,10 +8,8 @@
 import Foundation
 import SwiftUI
 
-
-
 // MARK: - Custom TextEditor with Line Numbers
-struct LineNumberTextEditor: NSViewRepresentable {
+struct TextEditor: NSViewRepresentable {
     @Binding var text: String
     var font: NSFont
     
@@ -29,6 +27,8 @@ struct LineNumberTextEditor: NSViewRepresentable {
         textView.isRichText = false
         textView.allowsUndo = true
         textView.backgroundColor = NSColor(red: 0.98, green: 0.97, blue: 0.93, alpha: 1.0) // Ivory color
+        textView.textColor = NSColor.black
+        textView.insertionPointColor = NSColor.black
         textView.drawsBackground = true
         textView.isHorizontallyResizable = false
         textView.isVerticallyResizable = true
@@ -78,9 +78,9 @@ struct LineNumberTextEditor: NSViewRepresentable {
     }
     
     class Coordinator: NSObject, NSTextViewDelegate {
-        var parent: LineNumberTextEditor
+        var parent: TextEditor
         
-        init(_ parent: LineNumberTextEditor) {
+        init(_ parent: TextEditor) {
             self.parent = parent
         }
         
