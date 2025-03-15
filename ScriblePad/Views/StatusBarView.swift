@@ -7,7 +7,6 @@ struct StatusBarView: View {
     var documentCreationDate: Date?
     var documentModificationDate: Date?
     var documentContent: String?
-    @Binding var isWordWrapEnabled: Bool
     
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -46,14 +45,6 @@ struct StatusBarView: View {
             
             // Middle: Document stats
             HStack(spacing: 16) {
-                // Word wrap toggle
-                Toggle(isOn: $isWordWrapEnabled) {
-                    Image(systemName: "text.wrap")
-                        .foregroundColor(.secondary)
-                }
-                .toggleStyle(.button)
-                .controlSize(.small)
-                .help("Toggle Word Wrap")
                 
                 // Text statistics
                 if let _ = documentContent {

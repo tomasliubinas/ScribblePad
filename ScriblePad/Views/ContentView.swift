@@ -80,7 +80,7 @@ struct ContentView: View {
             
             // Detail View
             if let note = selectedNote {
-                NoteDetailView(note: note, wordWrap: $isWordWrapEnabled)
+                NoteDetailView(note: note)
                     .id(note.id) // Force view to recreate when note changes
                     .navigationTitle(note.noteTitle)
             } else {
@@ -107,8 +107,7 @@ struct ContentView: View {
         // Status Bar
         StatusBarView(
             documentModificationDate: selectedNote?.modificationDate,
-            documentContent: selectedNote?.content,
-            isWordWrapEnabled: $isWordWrapEnabled
+            documentContent: selectedNote?.content
         )
     }
     }
