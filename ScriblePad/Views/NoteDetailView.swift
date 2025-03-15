@@ -14,7 +14,7 @@ struct NoteDetailView: View {
     @State private var tempContent: String = ""
     
     var body: some View {
-        LineNumberTextEditor(
+        TextEditor(
             text: $tempContent,
             font: NSFont.monospacedSystemFont(ofSize: NSFont.systemFontSize + 1, weight: .regular)
         )
@@ -22,13 +22,14 @@ struct NoteDetailView: View {
             // Set the content when the view appears
             tempContent = note.content ?? ""
             
+            /*
             // Force the rulers to be visible after a short delay
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 if let window = NSApp.windows.first,
                    let scrollView = findFirstScrollView(in: window.contentView) {
                     scrollView.rulersVisible = true
                 }
-            }
+            }*/
         }
         .onChange(of: tempContent) { newValue in
             updateNote(content: newValue)
