@@ -19,9 +19,10 @@ struct ContentView: View {
     @State private var selectedNote: Note?
     
     var body: some View {
-        NavigationView {
-            // Sidebar
-            VStack {
+        VStack(spacing: 0) {
+            NavigationView {
+                // Sidebar
+                VStack {
                 HStack {
                     Text("Notes")
                         .font(.headline)
@@ -79,7 +80,7 @@ struct ContentView: View {
             
             // Detail View
             if let note = selectedNote {
-                NoteDetailView(note: note)
+                NoteDetailView(note: note, wordWrap: $isWordWrapEnabled)
                     .id(note.id) // Force view to recreate when note changes
                     .navigationTitle(note.noteTitle)
             } else {
@@ -102,6 +103,14 @@ struct ContentView: View {
                 deleteNote(note)
             }
         }
+        
+        // Status Bar
+        StatusBarView(
+            documentModificationDate: selectedNote?.modificationDate,
+            documentContent: selectedNote?.content,
+            isWordWrapEnabled: $isWordWrapEnabled
+        )
+    }
     }
     
     private func setupSidebarToggleKeyboardShortcut() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */; };
 		C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */; };
 		C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E22D84F20A00ABB66E /* ContentView.swift */; };
 		C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E52D84F38800ABB66E /* PersistenceController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribleAppDelegate.swift; sourceTree = "<group>"; };
 		C38056E22D84F20A00ABB66E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38056E52D84F38800ABB66E /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				C3B6E6D82D84490300B0EF49 /* TextEditor.swift */,
 				C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */,
 				C38056E22D84F20A00ABB66E /* ContentView.swift */,
+				62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				C3B6E6D92D84490300B0EF49 /* TextEditor.swift in Sources */,
 				C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */,
 				C3B6E6D72D84484000B0EF49 /* LineNumberRulerView.swift in Sources */,
+				62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */,
 				C38056E92D84F3FD00ABB66E /* Note.swift in Sources */,
 				C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */,
 				C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */,
