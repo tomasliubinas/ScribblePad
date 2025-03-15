@@ -25,7 +25,11 @@ class ScribleAppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         
         if let button = statusItem?.button {
-            button.title = "S"
+            //button.title = "S"
+            //button.font = NSFont.boldSystemFont(ofSize: 15)
+            let symbolConfig = NSImage.SymbolConfiguration(pointSize: 16, weight: .medium)
+                    button.image = NSImage(systemSymbolName: "doc.circle", accessibilityDescription: "ScribblePad")?
+                        .withSymbolConfiguration(symbolConfig)
             button.action = #selector(statusBarButtonClicked)
             button.target = self
         }
@@ -66,6 +70,6 @@ class ScribleAppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         // Prevent the app from terminating when the last window is closed
-        return false
+        return true
     }
 }
