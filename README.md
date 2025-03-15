@@ -6,9 +6,9 @@ ScriblePad is a simple native macOS note taking app built with SwiftUI.
 
 ## Requirements
 
-- macOS 11.0 or later
-- Xcode 13.0 or later
-- Swift 5.5 or later
+- macOS 13.0 or later
+- Xcode 15.0 or later
+- Swift 5.8 or later
 
 ## Installation
 
@@ -27,7 +27,6 @@ open ScriblePad.xcodeproj
 
 ## Testing
 
-The project includes both unit tests and UI tests:
 - Run unit tests: ⌘+U in Xcode
 - UI tests are in the ScriblePadUITests directory
 

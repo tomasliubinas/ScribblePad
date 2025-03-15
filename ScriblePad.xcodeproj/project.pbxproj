@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */; };
+		62F3F1212D8616980045B6AE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 62F3F11F2D8616980045B6AE /* LICENSE */; };
+		62F3F1222D8616980045B6AE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F3F1202D8616980045B6AE /* README.md */; };
 		C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */; };
 		C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E22D84F20A00ABB66E /* ContentView.swift */; };
 		C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E52D84F38800ABB66E /* PersistenceController.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		62F3F11F2D8616980045B6AE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		62F3F1202D8616980045B6AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribleAppDelegate.swift; sourceTree = "<group>"; };
 		C38056E22D84F20A00ABB66E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38056E52D84F38800ABB66E /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			children = (
 				C3B6E6C72D843C2C00B0EF49 /* ScriblePadUITests.swift */,
 				C3B6E6C92D843C2C00B0EF49 /* ScriblePadUITestsLaunchTests.swift */,
+				62F3F11F2D8616980045B6AE /* LICENSE */,
+				62F3F1202D8616980045B6AE /* README.md */,
 			);
 			path = ScriblePadUITests;
 			sourceTree = "<group>";
@@ -294,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F3F1222D8616980045B6AE /* README.md in Resources */,
+				62F3F1212D8616980045B6AE /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
