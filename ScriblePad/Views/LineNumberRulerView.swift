@@ -96,11 +96,14 @@ class LineNumberRulerView: NSRulerView {
             index = NSMaxRange(lineRange)
         }
         
+    
         // Add one more line if the document ends with a newline
         let endsWithNewline = content.hasSuffix("\n")
         if endsWithNewline {
-            lineCount += 2
+            lineCount += 1
+            lineRanges.append(NSRange(location: nsString.length, length: 0))
         }
+       
         
         // Get the range of visible text
         let glyphRange = layoutManager.glyphRange(forBoundingRect: visibleRect, in: textContainer)
@@ -115,6 +118,7 @@ class LineNumberRulerView: NSRulerView {
             index = NSMaxRange(lineRange)
         }
         
+        
         // Draw line numbers for visible lines
         for i in 0..<lineRanges.count {
             let lineRange = lineRanges[i]
@@ -122,8 +126,8 @@ class LineNumberRulerView: NSRulerView {
             
             // Check if this line is visible
             if NSLocationInRange(lineRange.location, visibleRange) ||
-               (lineRange.location <= visibleRange.location &&
-                NSMaxRange(lineRange) > visibleRange.location) {
+                   (lineRange.location <= visibleRange.location && NSMaxRange(lineRange) > visibleRange.location) ||
+                   (endsWithNewline && NSMaxRange(visibleRange) >= nsString.length) {
                 
                 // Get the rect for this line
                 let glyphRange = layoutManager.glyphRange(forCharacterRange: lineRange, actualCharacterRange: nil)
@@ -187,7 +191,7 @@ class LineNumberRulerView: NSRulerView {
         
         let stringSize = numStr.size(withAttributes: attrs)
         let x = rect.width - stringSize.width - 4.0
-        let yPos = y + 2  // Add a small offset for better alignment
+        let yPos = y + 1// Add a small offset for better alignment
         
         numStr.draw(at: NSPoint(x: x, y: yPos), withAttributes: attrs)
     }
