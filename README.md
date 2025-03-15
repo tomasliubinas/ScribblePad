@@ -1,6 +1,6 @@
-# ScribblePad
-
 [![Swift](https://github.com/tomasliubinas/ScribblePad/actions/workflows/swift.yml/badge.svg)](https://github.com/tomasliubinas/ScribblePad/actions/workflows/swift.yml)
+
+# ScribblePad
 
 ScribblePad is a simple native macOS note taking app built with SwiftUI.
 
