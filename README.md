@@ -1,6 +1,6 @@
 # ScriblePad
 
-ScriblePad is a simple native macOS note-taking application built with SwiftUI.
+ScriblePad is a simple native macOS note taking app built with SwiftUI.
 
 ## Requirements
 
@@ -23,14 +23,6 @@ open ScriblePad.xcodeproj
 
 3. Build and run the project in Xcode (⌘+R)
 
-## Development
-
-The application is built using:
-- SwiftUI for the user interface
-- Core Data for data persistence
-- Combine framework for reactive programming
-- Native macOS frameworks for system integration
-
 ## Testing
 
 The project includes both unit tests and UI tests:
@@ -48,9 +40,3 @@ The project includes both unit tests and UI tests:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Built with SwiftUI and modern Apple frameworks
-- Designed for macOS with native look and feel
-- Focused on performance and user experience
