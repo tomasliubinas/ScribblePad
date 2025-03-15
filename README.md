@@ -14,7 +14,7 @@ ScriblePad is a simple native macOS note taking app built with SwiftUI.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/tomasliubinas/ScriblePad.git
+git clone https://github.com/tomasliubinas/ScribblePad.git
 ```
 
 2. Open the project in Xcode:
