@@ -1,5 +1,5 @@
 import XCTest
-@testable import ScriblePad
+@testable import ScribblePad
 
 final class ScriblePadTests: XCTestCase {
 

@@ -1,6 +1,6 @@
 import XCTest
 
-final class ScriblePadUITestsLaunchTests: XCTestCase {
+final class ScribblePadUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
