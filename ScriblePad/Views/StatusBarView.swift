@@ -35,31 +35,27 @@ struct StatusBarView: View {
                 Text("ScriblePad")
                     .bold()
                 
-                Text("v\(buildVersion) (\(buildNumber))")
+                Text("v\(buildVersion) (build: \(buildNumber))")
                     .foregroundColor(.secondary)
             }
             
-            Divider()
-                .frame(height: 12)
-                .padding(.horizontal, 8)
+            Spacer()
             
-            // Middle: Document stats
+            // Right side: Document info and stats
             HStack(spacing: 16) {
-                
                 // Text statistics
                 if let _ = documentContent {
                     Text("\(textStats.words) words")
                         .foregroundColor(.secondary)
                     Text("\(textStats.chars) characters")
                         .foregroundColor(.secondary)
+                    
+                    Divider()
+                        .frame(height: 12)
+                        .padding(.horizontal, 8)
                 }
-            }
-            
-            Spacer()
-            
-            // Right side: Document info
-            HStack(spacing: 16) {
-                /*
+                
+                // Document dates
                 if let created = documentCreationDate {
                     HStack(spacing: 4) {
                         Text("Created:")
@@ -67,7 +63,8 @@ struct StatusBarView: View {
                         Text(dateFormatter.string(from: created))
                             .foregroundColor(.secondary)
                     }
-                }*/
+                }
+                
                 
                 if let modified = documentModificationDate {
                     HStack(spacing: 4) {
