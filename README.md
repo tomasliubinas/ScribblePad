@@ -1,8 +1,8 @@
-# ScriblePad
+# ScribblePad
 
-ScriblePad is a simple native macOS note taking app built with SwiftUI.
+ScribblePad is a simple native macOS note taking app built with SwiftUI.
 
-![ScriblePad Screenshot](docs/Screenshot.png)
+![ScribblePad Screenshot](docs/Screenshot.png)
 
 ## Requirements
 

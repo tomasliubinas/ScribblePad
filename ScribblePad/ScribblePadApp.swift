@@ -4,9 +4,9 @@ import AppKit
 
 // MARK: - Main App
 @main
-struct ScriblePadApp: App {
+struct ScribblePadApp: App {
     let persistenceController = PersistenceController.shared
-    @NSApplicationDelegateAdaptor(ScribleAppDelegate.self) var appDelegate
+    @NSApplicationDelegateAdaptor(ScribbleAppDelegate.self) var appDelegate
     
     init() {
         // Set app to always prefer tabs

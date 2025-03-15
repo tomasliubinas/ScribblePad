@@ -10,16 +10,16 @@
 		62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */; };
 		62F3F1212D8616980045B6AE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 62F3F11F2D8616980045B6AE /* LICENSE */; };
 		62F3F1222D8616980045B6AE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F3F1202D8616980045B6AE /* README.md */; };
-		C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */; };
+		C38056E12D84F15F00ABB66E /* ScribbleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E02D84F15F00ABB66E /* ScribbleAppDelegate.swift */; };
 		C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E22D84F20A00ABB66E /* ContentView.swift */; };
 		C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E52D84F38800ABB66E /* PersistenceController.swift */; };
 		C38056E92D84F3FD00ABB66E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E82D84F3FD00ABB66E /* Note.swift */; };
-		C3B6E6AC2D843C2B00B0EF49 /* ScriblePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6AB2D843C2B00B0EF49 /* ScriblePadApp.swift */; };
+		C3B6E6AC2D843C2B00B0EF49 /* ScribblePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6AB2D843C2B00B0EF49 /* ScribblePadApp.swift */; };
 		C3B6E6B02D843C2C00B0EF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */; };
 		C3B6E6B32D843C2C00B0EF49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B6E6B22D843C2C00B0EF49 /* Preview Assets.xcassets */; };
-		C3B6E6BE2D843C2C00B0EF49 /* ScriblePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6BD2D843C2C00B0EF49 /* ScriblePadTests.swift */; };
-		C3B6E6C82D843C2C00B0EF49 /* ScriblePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6C72D843C2C00B0EF49 /* ScriblePadUITests.swift */; };
-		C3B6E6CA2D843C2C00B0EF49 /* ScriblePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6C92D843C2C00B0EF49 /* ScriblePadUITestsLaunchTests.swift */; };
+		C3B6E6BE2D843C2C00B0EF49 /* ScribblePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6BD2D843C2C00B0EF49 /* ScribblePadTests.swift */; };
+		C3B6E6C82D843C2C00B0EF49 /* ScribblePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6C72D843C2C00B0EF49 /* ScribblePadUITests.swift */; };
+		C3B6E6CA2D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6C92D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift */; };
 		C3B6E6D72D84484000B0EF49 /* LineNumberRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */; };
 		C3B6E6D92D84490300B0EF49 /* TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6D82D84490300B0EF49 /* TextEditor.swift */; };
 		C3B6E6DB2D84494400B0EF49 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */; };
@@ -31,14 +31,14 @@
 			containerPortal = C3B6E6A02D843C2B00B0EF49 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C3B6E6A72D843C2B00B0EF49;
-			remoteInfo = ScriblePad;
+			remoteInfo = ScribblePad;
 		};
 		C3B6E6C42D843C2C00B0EF49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3B6E6A02D843C2B00B0EF49 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C3B6E6A72D843C2B00B0EF49;
-			remoteInfo = ScriblePad;
+			remoteInfo = ScribblePad;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,20 +46,20 @@
 		62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		62F3F11F2D8616980045B6AE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		62F3F1202D8616980045B6AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribleAppDelegate.swift; sourceTree = "<group>"; };
+		C38056E02D84F15F00ABB66E /* ScribbleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribbleAppDelegate.swift; sourceTree = "<group>"; };
 		C38056E22D84F20A00ABB66E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38056E52D84F38800ABB66E /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		C38056E82D84F3FD00ABB66E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		C3B6E6A82D843C2B00B0EF49 /* ScriblePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriblePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3B6E6AB2D843C2B00B0EF49 /* ScriblePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriblePadApp.swift; sourceTree = "<group>"; };
+		C3B6E6A82D843C2B00B0EF49 /* ScribblePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScribblePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B6E6AB2D843C2B00B0EF49 /* ScribblePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribblePadApp.swift; sourceTree = "<group>"; };
 		C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B6E6B22D843C2C00B0EF49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C3B6E6B42D843C2C00B0EF49 /* ScriblePad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScriblePad.entitlements; sourceTree = "<group>"; };
-		C3B6E6B92D843C2C00B0EF49 /* ScriblePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriblePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3B6E6BD2D843C2C00B0EF49 /* ScriblePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriblePadTests.swift; sourceTree = "<group>"; };
-		C3B6E6C32D843C2C00B0EF49 /* ScriblePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScriblePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3B6E6C72D843C2C00B0EF49 /* ScriblePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriblePadUITests.swift; sourceTree = "<group>"; };
-		C3B6E6C92D843C2C00B0EF49 /* ScriblePadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriblePadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3B6E6B42D843C2C00B0EF49 /* ScribblePad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScribblePad.entitlements; sourceTree = "<group>"; };
+		C3B6E6B92D843C2C00B0EF49 /* ScribblePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribblePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B6E6BD2D843C2C00B0EF49 /* ScribblePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribblePadTests.swift; sourceTree = "<group>"; };
+		C3B6E6C32D843C2C00B0EF49 /* ScribblePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribblePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B6E6C72D843C2C00B0EF49 /* ScribblePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribblePadUITests.swift; sourceTree = "<group>"; };
+		C3B6E6C92D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribblePadUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNumberRulerView.swift; sourceTree = "<group>"; };
 		C3B6E6D82D84490300B0EF49 /* TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditor.swift; sourceTree = "<group>"; };
 		C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 		C3B6E69F2D843C2B00B0EF49 = {
 			isa = PBXGroup;
 			children = (
-				C3B6E6AA2D843C2B00B0EF49 /* ScriblePad */,
-				C3B6E6BC2D843C2C00B0EF49 /* ScriblePadTests */,
-				C3B6E6C62D843C2C00B0EF49 /* ScriblePadUITests */,
+				C3B6E6AA2D843C2B00B0EF49 /* ScribblePad */,
+				C3B6E6BC2D843C2C00B0EF49 /* ScribblePadTests */,
+				C3B6E6C62D843C2C00B0EF49 /* ScribblePadUITests */,
 				C3B6E6A92D843C2B00B0EF49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,26 +131,26 @@
 		C3B6E6A92D843C2B00B0EF49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3B6E6A82D843C2B00B0EF49 /* ScriblePad.app */,
-				C3B6E6B92D843C2C00B0EF49 /* ScriblePadTests.xctest */,
-				C3B6E6C32D843C2C00B0EF49 /* ScriblePadUITests.xctest */,
+				C3B6E6A82D843C2B00B0EF49 /* ScribblePad.app */,
+				C3B6E6B92D843C2C00B0EF49 /* ScribblePadTests.xctest */,
+				C3B6E6C32D843C2C00B0EF49 /* ScribblePadUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3B6E6AA2D843C2B00B0EF49 /* ScriblePad */ = {
+		C3B6E6AA2D843C2B00B0EF49 /* ScribblePad */ = {
 			isa = PBXGroup;
 			children = (
 				C38056E72D84F3EA00ABB66E /* Entities */,
 				C38056E42D84F36E00ABB66E /* Controllers */,
 				C38056DF2D84EF1600ABB66E /* Views */,
-				C3B6E6AB2D843C2B00B0EF49 /* ScriblePadApp.swift */,
-				C38056E02D84F15F00ABB66E /* ScribleAppDelegate.swift */,
+				C3B6E6AB2D843C2B00B0EF49 /* ScribblePadApp.swift */,
+				C38056E02D84F15F00ABB66E /* ScribbleAppDelegate.swift */,
 				C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */,
-				C3B6E6B42D843C2C00B0EF49 /* ScriblePad.entitlements */,
+				C3B6E6B42D843C2C00B0EF49 /* ScribblePad.entitlements */,
 				C3B6E6B12D843C2C00B0EF49 /* Preview Content */,
 			);
-			path = ScriblePad;
+			path = ScribblePad;
 			sourceTree = "<group>";
 		};
 		C3B6E6B12D843C2C00B0EF49 /* Preview Content */ = {
@@ -161,31 +161,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C3B6E6BC2D843C2C00B0EF49 /* ScriblePadTests */ = {
+		C3B6E6BC2D843C2C00B0EF49 /* ScribblePadTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3B6E6BD2D843C2C00B0EF49 /* ScriblePadTests.swift */,
+				C3B6E6BD2D843C2C00B0EF49 /* ScribblePadTests.swift */,
 			);
-			path = ScriblePadTests;
+			path = ScribblePadTests;
 			sourceTree = "<group>";
 		};
-		C3B6E6C62D843C2C00B0EF49 /* ScriblePadUITests */ = {
+		C3B6E6C62D843C2C00B0EF49 /* ScribblePadUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C3B6E6C72D843C2C00B0EF49 /* ScriblePadUITests.swift */,
-				C3B6E6C92D843C2C00B0EF49 /* ScriblePadUITestsLaunchTests.swift */,
+				C3B6E6C72D843C2C00B0EF49 /* ScribblePadUITests.swift */,
+				C3B6E6C92D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift */,
 				62F3F11F2D8616980045B6AE /* LICENSE */,
 				62F3F1202D8616980045B6AE /* README.md */,
 			);
-			path = ScriblePadUITests;
+			path = ScribblePadUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3B6E6A72D843C2B00B0EF49 /* ScriblePad */ = {
+		C3B6E6A72D843C2B00B0EF49 /* ScribblePad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3B6E6CD2D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScriblePad" */;
+			buildConfigurationList = C3B6E6CD2D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScribblePad" */;
 			buildPhases = (
 				C3B6E6A42D843C2B00B0EF49 /* Sources */,
 				C3B6E6A52D843C2B00B0EF49 /* Frameworks */,
@@ -195,14 +195,14 @@
 			);
 			dependencies = (
 			);
-			name = ScriblePad;
-			productName = ScriblePad;
-			productReference = C3B6E6A82D843C2B00B0EF49 /* ScriblePad.app */;
+			name = ScribblePad;
+			productName = ScribblePad;
+			productReference = C3B6E6A82D843C2B00B0EF49 /* ScribblePad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C3B6E6B82D843C2C00B0EF49 /* ScriblePadTests */ = {
+		C3B6E6B82D843C2C00B0EF49 /* ScribblePadTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3B6E6D02D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScriblePadTests" */;
+			buildConfigurationList = C3B6E6D02D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScribblePadTests" */;
 			buildPhases = (
 				C3B6E6B52D843C2C00B0EF49 /* Sources */,
 				C3B6E6B62D843C2C00B0EF49 /* Frameworks */,
@@ -213,14 +213,14 @@
 			dependencies = (
 				C3B6E6BB2D843C2C00B0EF49 /* PBXTargetDependency */,
 			);
-			name = ScriblePadTests;
-			productName = ScriblePadTests;
-			productReference = C3B6E6B92D843C2C00B0EF49 /* ScriblePadTests.xctest */;
+			name = ScribblePadTests;
+			productName = ScribblePadTests;
+			productReference = C3B6E6B92D843C2C00B0EF49 /* ScribblePadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C3B6E6C22D843C2C00B0EF49 /* ScriblePadUITests */ = {
+		C3B6E6C22D843C2C00B0EF49 /* ScribblePadUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3B6E6D32D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScriblePadUITests" */;
+			buildConfigurationList = C3B6E6D32D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScribblePadUITests" */;
 			buildPhases = (
 				C3B6E6BF2D843C2C00B0EF49 /* Sources */,
 				C3B6E6C02D843C2C00B0EF49 /* Frameworks */,
@@ -231,9 +231,9 @@
 			dependencies = (
 				C3B6E6C52D843C2C00B0EF49 /* PBXTargetDependency */,
 			);
-			name = ScriblePadUITests;
-			productName = ScriblePadUITests;
-			productReference = C3B6E6C32D843C2C00B0EF49 /* ScriblePadUITests.xctest */;
+			name = ScribblePadUITests;
+			productName = ScribblePadUITests;
+			productReference = C3B6E6C32D843C2C00B0EF49 /* ScribblePadUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -259,7 +259,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C3B6E6A32D843C2B00B0EF49 /* Build configuration list for PBXProject "ScriblePad" */;
+			buildConfigurationList = C3B6E6A32D843C2B00B0EF49 /* Build configuration list for PBXProject "ScribblePad" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -272,9 +272,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3B6E6A72D843C2B00B0EF49 /* ScriblePad */,
-				C3B6E6B82D843C2C00B0EF49 /* ScriblePadTests */,
-				C3B6E6C22D843C2C00B0EF49 /* ScriblePadUITests */,
+				C3B6E6A72D843C2B00B0EF49 /* ScribblePad */,
+				C3B6E6B82D843C2C00B0EF49 /* ScribblePadTests */,
+				C3B6E6C22D843C2C00B0EF49 /* ScribblePadUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,8 +318,8 @@
 				62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */,
 				C38056E92D84F3FD00ABB66E /* Note.swift in Sources */,
 				C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */,
-				C38056E12D84F15F00ABB66E /* ScribleAppDelegate.swift in Sources */,
-				C3B6E6AC2D843C2B00B0EF49 /* ScriblePadApp.swift in Sources */,
+				C38056E12D84F15F00ABB66E /* ScribbleAppDelegate.swift in Sources */,
+				C3B6E6AC2D843C2B00B0EF49 /* ScribblePadApp.swift in Sources */,
 				C3B6E6DB2D84494400B0EF49 /* NoteDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B6E6BE2D843C2C00B0EF49 /* ScriblePadTests.swift in Sources */,
+				C3B6E6BE2D843C2C00B0EF49 /* ScribblePadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B6E6C82D843C2C00B0EF49 /* ScriblePadUITests.swift in Sources */,
-				C3B6E6CA2D843C2C00B0EF49 /* ScriblePadUITestsLaunchTests.swift in Sources */,
+				C3B6E6C82D843C2C00B0EF49 /* ScribblePadUITests.swift in Sources */,
+				C3B6E6CA2D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,12 +346,12 @@
 /* Begin PBXTargetDependency section */
 		C3B6E6BB2D843C2C00B0EF49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C3B6E6A72D843C2B00B0EF49 /* ScriblePad */;
+			target = C3B6E6A72D843C2B00B0EF49 /* ScribblePad */;
 			targetProxy = C3B6E6BA2D843C2C00B0EF49 /* PBXContainerItemProxy */;
 		};
 		C3B6E6C52D843C2C00B0EF49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C3B6E6A72D843C2B00B0EF49 /* ScriblePad */;
+			target = C3B6E6A72D843C2B00B0EF49 /* ScribblePad */;
 			targetProxy = C3B6E6C42D843C2C00B0EF49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,11 +480,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ScriblePad/ScriblePad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScribblePad/ScribblePad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_ASSET_PATHS = "\"ScriblePad/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ScribblePad/Preview Content\"";
 				DEVELOPMENT_TEAM = KXZY2X6VCN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -495,7 +495,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScriblePad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -507,11 +507,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ScriblePad/ScriblePad.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScribblePad/ScribblePad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_ASSET_PATHS = "\"ScriblePad/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ScribblePad/Preview Content\"";
 				DEVELOPMENT_TEAM = KXZY2X6VCN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -522,7 +522,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScriblePad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -540,11 +540,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScriblePadTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScriblePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScriblePad";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScribblePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScribblePad";
 			};
 			name = Debug;
 		};
@@ -559,11 +559,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScriblePadTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScriblePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScriblePad";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScribblePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScribblePad";
 			};
 			name = Release;
 		};
@@ -576,11 +576,11 @@
 				DEVELOPMENT_TEAM = KXZY2X6VCN;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScriblePadUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePadUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ScriblePad;
+				TEST_TARGET_NAME = ScribblePad;
 			};
 			name = Debug;
 		};
@@ -593,18 +593,18 @@
 				DEVELOPMENT_TEAM = KXZY2X6VCN;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScriblePadUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePadUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ScriblePad;
+				TEST_TARGET_NAME = ScribblePad;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3B6E6A32D843C2B00B0EF49 /* Build configuration list for PBXProject "ScriblePad" */ = {
+		C3B6E6A32D843C2B00B0EF49 /* Build configuration list for PBXProject "ScribblePad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3B6E6CB2D843C2C00B0EF49 /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3B6E6CD2D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScriblePad" */ = {
+		C3B6E6CD2D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScribblePad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3B6E6CE2D843C2C00B0EF49 /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3B6E6D02D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScriblePadTests" */ = {
+		C3B6E6D02D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScribblePadTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3B6E6D12D843C2C00B0EF49 /* Debug */,
@@ -631,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3B6E6D32D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScriblePadUITests" */ = {
+		C3B6E6D32D843C2C00B0EF49 /* Build configuration list for PBXNativeTarget "ScribblePadUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3B6E6D42D843C2C00B0EF49 /* Debug */,

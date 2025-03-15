@@ -4,7 +4,7 @@ import SwiftUI
 
 
 // MARK: - App Delegate for Menu Handling
-class ScribleAppDelegate: NSObject, NSApplicationDelegate {
+class ScribbleAppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
     
     func applicationDidFinishLaunching(_ notification: Notification) {

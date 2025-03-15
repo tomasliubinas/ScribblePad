@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: xcodebuild -project ScriblePad.xcodeproj -scheme ScriblePad -configuration Debug build
+      run: xcodebuild -project ScribblePad.xcodeproj -scheme ScribblePad -configuration Debug build
     - name: Run tests
-      run: xcodebuild -project ScriblePad.xcodeproj -scheme ScriblePad -configuration Debug test
+      run: xcodebuild -project ScribblePad.xcodeproj -scheme ScribblePad -configuration Debug test

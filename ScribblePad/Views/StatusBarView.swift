@@ -32,7 +32,7 @@ struct StatusBarView: View {
                     .resizable()
                     .frame(width: 16, height: 16)
                 
-                Text("ScriblePad")
+                Text("ScribblePad")
                     .bold()
                 
                 Text("v\(buildVersion) (build: \(buildNumber))")
