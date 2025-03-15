@@ -1,10 +1,3 @@
-//
-//  ScriblePadTests.swift
-//  ScriblePadTests
-//
-//  Created by Tomas Liubinas Paysera on 2025-03-14.
-//
-
 import XCTest
 @testable import ScriblePad
 

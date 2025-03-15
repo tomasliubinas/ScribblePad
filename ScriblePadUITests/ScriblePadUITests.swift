@@ -1,10 +1,3 @@
-//
-//  ScriblePadUITests.swift
-//  ScriblePadUITests
-//
-//  Created by Tomas Liubinas Paysera on 2025-03-14.
-//
-
 import XCTest
 
 final class ScriblePadUITests: XCTestCase {

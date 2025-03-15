@@ -1,13 +1,5 @@
-//
-//  Note.swift
-//  ScriblePad
-//
-//  Created by Tomas Liubinas Paysera on 2025-03-15.
-//
-
 import Foundation
 import SwiftUI
-
 
 // MARK: - Notification Names
 extension Notification.Name {
