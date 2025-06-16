@@ -99,8 +99,17 @@ struct ContentView: View {
         
         // Status Bar
         StatusBarView(
+            documentCreationDate: selectedNote?.creationDate,
             documentModificationDate: selectedNote?.modificationDate,
-            documentContent: selectedNote?.content
+            documentContent: selectedNote?.content,
+            isWordWrapEnabled: selectedNote?.isWordWrapEnabled ?? true,
+            onWordWrapToggle: {
+                if let note = selectedNote {
+                    note.isWordWrapEnabled.toggle()
+                    note.modificationDate = Date()
+                    PersistenceController.shared.saveContext()
+                }
+            }
         )
     }
     }

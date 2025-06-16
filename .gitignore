@@ -57,3 +57,6 @@ iOSInjectionProject/
 .env.development
 .env.test
 .env.production
+
+# Claude Code
+.claude/

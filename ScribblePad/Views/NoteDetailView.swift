@@ -9,7 +9,8 @@ struct NoteDetailView: View {
     var body: some View {
         TextEditor(
             text: $tempContent,
-            font: NSFont.monospacedSystemFont(ofSize: NSFont.systemFontSize + 1, weight: .regular)
+            font: NSFont.monospacedSystemFont(ofSize: NSFont.systemFontSize + 1, weight: .regular),
+            isWordWrapEnabled: note.isWordWrapEnabled
         )
         .onAppear {
             // Set the content when the view appears

@@ -13,6 +13,7 @@ class Note: NSManagedObject, Identifiable {
     @NSManaged public var content: String?
     @NSManaged public var creationDate: Date?
     @NSManaged public var modificationDate: Date?
+    @NSManaged public var isWordWrapEnabled: Bool
     
     var noteTitle: String {
         let firstLine = content?.split(separator: "\n").first ?? ""
