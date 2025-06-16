@@ -38,11 +38,28 @@ struct TextEditor: NSViewRepresentable {
         // Force layout to happen before adding the ruler
         textView.layoutManager?.ensureLayout(for: textView.textContainer!)
         
+        // Debug: Check UserDefaults for ruler-related keys
+        let userDefaults = UserDefaults.standard
+        let allKeys = userDefaults.dictionaryRepresentation().keys
+        let rulerKeys = allKeys.filter { $0.contains("Ruler") || $0.contains("ruler") || $0.contains("NSRuler") }
+        if !rulerKeys.isEmpty {
+            print("🔍 DEBUG: Found ruler-related UserDefaults keys: \(rulerKeys)")
+            for key in rulerKeys {
+                print("🔍 DEBUG: \(key) = \(userDefaults.object(forKey: key) ?? "nil")")
+            }
+        } else {
+            print("🔍 DEBUG: No ruler-related UserDefaults keys found")
+        }
+        
         // Add line numbers
         let lineNumberView = LineNumberRulerView(textView: textView)
         scrollView.verticalRulerView = lineNumberView
         scrollView.hasVerticalRuler = true
         scrollView.rulersVisible = true
+        
+        // Debug: Log final scroll view ruler state
+        print("🔍 DEBUG: Final scroll view ruler thickness: \(scrollView.verticalRulerView?.ruleThickness ?? 0)")
+        print("🔍 DEBUG: Final scroll view rulers visible: \(scrollView.rulersVisible)")
         
         // Add border
         scrollView.borderType = .bezelBorder
@@ -60,9 +77,17 @@ struct TextEditor: NSViewRepresentable {
             textView.string = text
         }
         
-        // Make sure the ruler is visible
+        // Make sure the ruler is visible and has correct thickness
         if !nsView.rulersVisible {
             nsView.rulersVisible = true
+        }
+        
+        // Force ruler thickness to stay at 40.0 (safeguard against state restoration)
+        if let rulerView = nsView.verticalRulerView {
+            if rulerView.ruleThickness != 40.0 {
+                print("🔍 DEBUG: Correcting ruler thickness from \(rulerView.ruleThickness) to 40.0")
+                rulerView.ruleThickness = 40.0
+            }
         }
     }
     
