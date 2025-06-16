@@ -13,7 +13,18 @@ class LineNumberRulerView: NSRulerView {
         super.init(scrollView: textView.enclosingScrollView!, orientation: .verticalRuler)
         
         self.clientView = textView
+        
+        // Debug: Log initial ruler thickness
+        print("🔍 DEBUG: Initial ruler thickness before setting: \(self.ruleThickness)")
+        
         self.ruleThickness = 40.0
+        
+        // Debug: Log ruler thickness after setting
+        print("🔍 DEBUG: Ruler thickness after setting to 40.0: \(self.ruleThickness)")
+        
+        // Debug: Check if ruler is resizable
+        print("🔍 DEBUG: Ruler is resizable: \(self.isFlipped)")
+        print("🔍 DEBUG: Scroll view rulers visible: \(textView.enclosingScrollView?.rulersVisible ?? false)")
         
         // Register for notifications to update when needed
         NotificationCenter.default.addObserver(
@@ -52,19 +63,55 @@ class LineNumberRulerView: NSRulerView {
     }
     
     @objc func viewBoundsDidChange(notification: Notification) {
+        // Debug: Log ruler thickness on bounds change
+        print("🔍 DEBUG: Bounds changed - Current ruler thickness: \(self.ruleThickness)")
         self.needsDisplay = true
     }
     
+    override var ruleThickness: CGFloat {
+        get {
+            return 40.0 // Force ruler thickness to always be 40.0
+        }
+        set {
+            // Ignore attempts to set different thickness
+            print("🔍 DEBUG: Attempted to set ruler thickness to \(newValue), but forcing it to stay at 40.0")
+            super.ruleThickness = 40.0
+        }
+    }
+    
+    // Override to prevent automatic state restoration
+    override func encodeRestorableState(with coder: NSCoder) {
+        // Don't encode any state to prevent automatic restoration
+        print("🔍 DEBUG: Preventing ruler state encoding")
+        // Deliberately not calling super to prevent state saving
+    }
+    
+    override func restoreState(with coder: NSCoder) {
+        // Don't restore any state
+        print("🔍 DEBUG: Preventing ruler state restoration")
+        // Deliberately not calling super to prevent state restoration
+        // Always reset to our desired thickness
+        super.ruleThickness = 40.0
+    }
+    
     override func drawHashMarksAndLabels(in rect: NSRect) {
-        // Set background color for the ruler
-        NSColor(red: 0.95, green: 0.95, blue: 0.9, alpha: 1.0).setFill()
-        rect.fill()
+        // Debug: Log the actual drawing dimensions
+        print("🔍 DEBUG: Draw rect width: \(rect.width), ruleThickness: \(self.ruleThickness)")
+        print("🔍 DEBUG: Draw rect: \(rect)")
         
-        // Draw a border on the right side
+        // Create a constrained rectangle that respects our ruleThickness
+        let constrainedRect = NSRect(x: rect.minX, y: rect.minY, width: self.ruleThickness, height: rect.height)
+        print("🔍 DEBUG: Constrained rect: \(constrainedRect)")
+        
+        // Set background color for the ruler and fill only the constrained area
+        NSColor(red: 0.95, green: 0.95, blue: 0.9, alpha: 1.0).setFill()
+        constrainedRect.fill()
+        
+        // Draw a border on the right side of the constrained area
         NSColor.lightGray.setStroke()
         let borderPath = NSBezierPath()
-        borderPath.move(to: NSPoint(x: rect.maxX - 0.5, y: rect.minY))
-        borderPath.line(to: NSPoint(x: rect.maxX - 0.5, y: rect.maxY))
+        borderPath.move(to: NSPoint(x: constrainedRect.maxX - 0.5, y: constrainedRect.minY))
+        borderPath.line(to: NSPoint(x: constrainedRect.maxX - 0.5, y: constrainedRect.maxY))
         borderPath.stroke()
         
         guard let textView = self.clientView as? NSTextView,
@@ -83,7 +130,7 @@ class LineNumberRulerView: NSRulerView {
         
         // Handle empty document
         if content.isEmpty {
-            drawLineNumber(1, at: visibleRect.minY, in: rect)
+            drawLineNumber(1, at: visibleRect.minY, in: constrainedRect)
             return
         }
         
@@ -144,7 +191,7 @@ class LineNumberRulerView: NSRulerView {
                 lineRect = textView.convert(lineRect, to: self)
                 
                 // Draw the line number
-                drawLineNumber(lineNumber, at: lineRect.minY, in: rect)
+                drawLineNumber(lineNumber, at: lineRect.minY, in: constrainedRect)
             }
         }
         
@@ -176,8 +223,8 @@ class LineNumberRulerView: NSRulerView {
             extraLineRect = textView.convert(extraLineRect, to: self)
             
             // Draw the line number for the extra line if it's visible
-            if extraLineRect.intersects(rect) {
-                drawLineNumber(lineCount, at: extraLineRect.minY, in: rect)
+            if extraLineRect.intersects(constrainedRect) {
+                drawLineNumber(lineCount, at: extraLineRect.minY, in: constrainedRect)
             }
         }
     }
@@ -190,7 +237,8 @@ class LineNumberRulerView: NSRulerView {
         ]
         
         let stringSize = numStr.size(withAttributes: attrs)
-        let x = rect.width - stringSize.width - 4.0
+        // Use the constrained width (ruleThickness) instead of the full rect width
+        let x = self.ruleThickness - stringSize.width - 4.0
         let yPos = y + 1// Add a small offset for better alignment
         
         numStr.draw(at: NSPoint(x: x, y: yPos), withAttributes: attrs)
