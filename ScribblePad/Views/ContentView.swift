@@ -106,7 +106,6 @@ struct ContentView: View {
             onWordWrapToggle: {
                 if let note = selectedNote {
                     note.isWordWrapEnabled.toggle()
-                    note.modificationDate = Date()
                     PersistenceController.shared.saveContext()
                 }
             }
