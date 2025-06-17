@@ -31,7 +31,7 @@ open ScriblePad.xcodeproj
 ## Testing
 
 - Run unit tests: ⌘+U in Xcode
-- UI tests are in the ScriblePadUITests directory
+- UI tests are in the ScribblePadUITests directory
 
 ## License
 
