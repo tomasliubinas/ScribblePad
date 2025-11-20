@@ -22,8 +22,8 @@ git clone https://github.com/tomasliubinas/ScribblePad.git
 
 2. Open the project in Xcode:
 ```bash
-cd ScriblePad
-open ScriblePad.xcodeproj
+cd ScribblePad
+open ScribblePad.xcodeproj
 ```
 
 3. Build and run the project in Xcode (⌘+R)
@@ -31,7 +31,7 @@ open ScriblePad.xcodeproj
 ## Testing
 
 - Run unit tests: ⌘+U in Xcode
-- UI tests are in the ScriblePadUITests directory
+- UI tests are in the ScribblePadUITests directory
 
 ## License
 
