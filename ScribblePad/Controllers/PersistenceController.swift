@@ -31,8 +31,13 @@ class PersistenceController {
         modificationDateAttribute.name = "modificationDate"
         modificationDateAttribute.attributeType = .dateAttributeType
         
+        let wordWrapAttribute = NSAttributeDescription()
+        wordWrapAttribute.name = "isWordWrapEnabled"
+        wordWrapAttribute.attributeType = .booleanAttributeType
+        wordWrapAttribute.defaultValue = true
+        
         // Add attributes to entity
-        noteEntity.properties = [idAttribute, contentAttribute, creationDateAttribute, modificationDateAttribute]
+        noteEntity.properties = [idAttribute, contentAttribute, creationDateAttribute, modificationDateAttribute, wordWrapAttribute]
         
         // Create model with entity
         let model = NSManagedObjectModel()
@@ -72,6 +77,7 @@ class PersistenceController {
         newNote.content = ""
         newNote.creationDate = Date()
         newNote.modificationDate = Date()
+        newNote.isWordWrapEnabled = true // Default to word wrap ON
         saveContext()
         return newNote
     }
