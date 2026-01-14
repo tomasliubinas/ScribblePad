@@ -2,7 +2,6 @@ import Foundation
 import SwiftUI
 
 
-
 // MARK: - App Delegate for Menu Handling
 class ScribbleAppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
@@ -15,20 +14,18 @@ class ScribbleAppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func setupStatusBarItem() {
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
         if let button = statusItem?.button {
-            //button.title = "S"
-            //button.font = NSFont.boldSystemFont(ofSize: 15)
-            let symbolConfig = NSImage.SymbolConfiguration(pointSize: 16, weight: .medium)
-                    button.image = NSImage(systemSymbolName: "doc.circle", accessibilityDescription: "ScribblePad")?
-                        .withSymbolConfiguration(symbolConfig)
+            button.title = "📝"
+            button.font = NSFont.systemFont(ofSize: 16)
             button.action = #selector(statusBarButtonClicked)
             button.target = self
         }
     }
     
     @objc func statusBarButtonClicked() {
+        // Show/hide app window
         if let window = NSApp.windows.first {
             if window.isVisible {
                 // If window is already visible, just bring it to front
@@ -66,3 +63,4 @@ class ScribbleAppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 }
+
