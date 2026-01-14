@@ -12,6 +12,7 @@ struct NoteDetailView: View {
             font: NSFont.monospacedSystemFont(ofSize: NSFont.systemFontSize + 1, weight: .regular),
             isWordWrapEnabled: note.isWordWrapEnabled
         )
+        .id(note.isWordWrapEnabled) // Force view recreation when word wrap changes
         .onAppear {
             // Set the content when the view appears
             tempContent = note.content ?? ""
