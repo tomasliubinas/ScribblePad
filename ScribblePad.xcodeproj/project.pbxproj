@@ -10,6 +10,9 @@
 		62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */; };
 		62F3F1212D8616980045B6AE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 62F3F11F2D8616980045B6AE /* LICENSE */; };
 		62F3F1222D8616980045B6AE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F3F1202D8616980045B6AE /* README.md */; };
+		A1B2C3D40000000000000001 /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D40000000000000002 /* CodeEditSourceEditor */; };
+		A1B2C3D40000000000000010 /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000011 /* NSColor+Hex.swift */; };
+		A1B2C3D40000000000000012 /* EditorTheme+Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000013 /* EditorTheme+Themes.swift */; };
 		C38056E12D84F15F00ABB66E /* ScribbleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E02D84F15F00ABB66E /* ScribbleAppDelegate.swift */; };
 		C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E22D84F20A00ABB66E /* ContentView.swift */; };
 		C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38056E52D84F38800ABB66E /* PersistenceController.swift */; };
@@ -20,8 +23,6 @@
 		C3B6E6BE2D843C2C00B0EF49 /* ScribblePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6BD2D843C2C00B0EF49 /* ScribblePadTests.swift */; };
 		C3B6E6C82D843C2C00B0EF49 /* ScribblePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6C72D843C2C00B0EF49 /* ScribblePadUITests.swift */; };
 		C3B6E6CA2D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6C92D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift */; };
-		C3B6E6D72D84484000B0EF49 /* LineNumberRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */; };
-		C3B6E6D92D84490300B0EF49 /* TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6D82D84490300B0EF49 /* TextEditor.swift */; };
 		C3B6E6DB2D84494400B0EF49 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		62F3F11F2D8616980045B6AE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		62F3F1202D8616980045B6AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		A1B2C3D40000000000000011 /* NSColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
+		A1B2C3D40000000000000013 /* EditorTheme+Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorTheme+Themes.swift"; sourceTree = "<group>"; };
 		C38056E02D84F15F00ABB66E /* ScribbleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribbleAppDelegate.swift; sourceTree = "<group>"; };
 		C38056E22D84F20A00ABB66E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38056E52D84F38800ABB66E /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -60,8 +63,6 @@
 		C3B6E6C32D843C2C00B0EF49 /* ScribblePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribblePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B6E6C72D843C2C00B0EF49 /* ScribblePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribblePadUITests.swift; sourceTree = "<group>"; };
 		C3B6E6C92D843C2C00B0EF49 /* ScribblePadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribblePadUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNumberRulerView.swift; sourceTree = "<group>"; };
-		C3B6E6D82D84490300B0EF49 /* TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditor.swift; sourceTree = "<group>"; };
 		C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B2C3D40000000000000001 /* CodeEditSourceEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1B2C3D40000000000000014 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D40000000000000011 /* NSColor+Hex.swift */,
+				A1B2C3D40000000000000013 /* EditorTheme+Themes.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C38056DF2D84EF1600ABB66E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C3B6E6DA2D84494400B0EF49 /* NoteDetailView.swift */,
-				C3B6E6D82D84490300B0EF49 /* TextEditor.swift */,
-				C3B6E6D62D84484000B0EF49 /* LineNumberRulerView.swift */,
 				C38056E22D84F20A00ABB66E /* ContentView.swift */,
 				62F3F11D2D85AE5E0045B6AE /* StatusBarView.swift */,
 			);
@@ -144,6 +153,7 @@
 				C38056E72D84F3EA00ABB66E /* Entities */,
 				C38056E42D84F36E00ABB66E /* Controllers */,
 				C38056DF2D84EF1600ABB66E /* Views */,
+				A1B2C3D40000000000000014 /* Extensions */,
 				C3B6E6AB2D843C2B00B0EF49 /* ScribblePadApp.swift */,
 				C38056E02D84F15F00ABB66E /* ScribbleAppDelegate.swift */,
 				C3B6E6AF2D843C2C00B0EF49 /* Assets.xcassets */,
@@ -196,6 +206,9 @@
 			dependencies = (
 			);
 			name = ScribblePad;
+			packageProductDependencies = (
+				A1B2C3D40000000000000002 /* CodeEditSourceEditor */,
+			);
 			productName = ScribblePad;
 			productReference = C3B6E6A82D843C2B00B0EF49 /* ScribblePad.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +281,9 @@
 				Base,
 			);
 			mainGroup = C3B6E69F2D843C2B00B0EF49;
+			packageReferences = (
+				A1B2C3D40000000000000003 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
+			);
 			productRefGroup = C3B6E6A92D843C2B00B0EF49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -312,15 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B6E6D92D84490300B0EF49 /* TextEditor.swift in Sources */,
 				C38056E62D84F38800ABB66E /* PersistenceController.swift in Sources */,
-				C3B6E6D72D84484000B0EF49 /* LineNumberRulerView.swift in Sources */,
 				62F3F11E2D85AE5E0045B6AE /* StatusBarView.swift in Sources */,
 				C38056E92D84F3FD00ABB66E /* Note.swift in Sources */,
 				C38056E32D84F20A00ABB66E /* ContentView.swift in Sources */,
 				C38056E12D84F15F00ABB66E /* ScribbleAppDelegate.swift in Sources */,
 				C3B6E6AC2D843C2B00B0EF49 /* ScribblePadApp.swift in Sources */,
 				C3B6E6DB2D84494400B0EF49 /* NoteDetailView.swift in Sources */,
+				A1B2C3D40000000000000010 /* NSColor+Hex.swift in Sources */,
+				A1B2C3D40000000000000012 /* EditorTheme+Themes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +499,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScribblePad/ScribblePad.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScribblePad/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -494,7 +510,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -510,7 +526,7 @@
 				CODE_SIGN_ENTITLEMENTS = ScribblePad/ScribblePad.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScribblePad/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -521,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liubinas.ScribblePad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -641,6 +657,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1B2C3D40000000000000003 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeEditApp/CodeEditSourceEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1B2C3D40000000000000002 /* CodeEditSourceEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D40000000000000003 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
+			productName = CodeEditSourceEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3B6E6A02D843C2B00B0EF49 /* Project object */;
 }
